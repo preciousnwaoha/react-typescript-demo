@@ -4,8 +4,8 @@ type InputProps = {
 }
 
 export const Input = ({value, handleChange}: InputProps) => { // destructuring props
-    const handleInputChange = (event: React.ChangeEvent<HTMLInputElement>) => {
-        console.log(event)
-    }
+    // const handleInputChange = (event: React.ChangeEvent<HTMLInputElement>) => {
+    //     console.log(event)
+    // }
     return <input type="text" value={value} onChange={handleChange} />
 }
