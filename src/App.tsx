@@ -1,13 +1,29 @@
-
+import { List } from "./components/generics/List";
 import "./App.css";
-import { Private } from "./components/auth/Private";
-import { Profile } from "./components/auth/Profile";
-
 
 function App() {
   return (
     <div className="App">
-      <Private isLoggedIn={true} component={Profile} />
+      <List
+        items={[
+          {
+            id: 1,
+            first: "Bruce",
+            last: "Lee",
+          },
+          {
+            id: 2,
+            first: "Tony",
+            last: "Starks",
+          },
+          {
+            id: 3,
+            first: "Princess",
+            last: "Diana",
+          },
+        ]}
+        onClick={(item) => console.log(item)}
+      />
     </div>
   );
 }
